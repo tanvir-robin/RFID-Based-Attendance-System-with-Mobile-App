@@ -18,7 +18,7 @@ access to the office premises.
   ![image](https://github.com/tanvir-robin/RFID-Based-Attendance-System-with-Mobile-App/assets/95021955/29f02ed5-5f01-4fd9-86ef-81fbbb6aee34)
 
 ## Database
-Used Firebase Realtime Database to store project Data and access logs. The user information is stored in Cloud Firestore to get instant access. Any of the database can be used for both purposes.
+Used Firebase Realtime Database to store project data and access logs. The user information is stored in Cloud Firestore to get instant access. Any of the database can be used for both purposes.
 
   
 
