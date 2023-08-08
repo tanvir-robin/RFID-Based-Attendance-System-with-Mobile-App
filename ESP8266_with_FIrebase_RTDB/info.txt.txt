@@ -1,0 +1,9 @@
+This code is for the esp8266 configuration. Assign your WIFI SSID and password in the code to allow NodeMCU to connect with the network. You have to configure Firebase with nodeMCU with this code. Replace your firebase web API, Host and the other required information.
+
+
+Before uploading:
+ 
+
+- Make sure that the RX and TX of the ESP8266 is disconnected.
+- Your wifi AP has to be 2.4Ghz. 5 Ghz isn't supported by all models.
+- Match your Serial Monitors baud rate with the baud rate defined in the code to monitor nodeMCU's logs.

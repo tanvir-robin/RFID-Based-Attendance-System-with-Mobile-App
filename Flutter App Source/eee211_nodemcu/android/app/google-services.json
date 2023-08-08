@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "976126025410",
+    "firebase_url": "https://esp8266-8a11f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "esp8266-8a11f",
+    "storage_bucket": "esp8266-8a11f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976126025410:android:0634fb0414255f0156255b",
+        "android_client_info": {
+          "package_name": "com.example.eee211_nodemcu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976126025410-sdcv8pq84pgeqdf89h3plmg4dgg63cnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA42SRV8OVUe7mf67AICLrIle0D-7AlSpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976126025410-sdcv8pq84pgeqdf89h3plmg4dgg63cnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
