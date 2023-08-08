@@ -28,7 +28,12 @@ Database. A serial communication is made with the Arduino and the ESP8266. When 
 
 5. **Mobile App:** A Flutter-based mobile app provides administrators with the ability to monitor and manage access logs in real-time. The app fetches data from Firebase and displays access history in a user-friendly interface
 
-## Implementation Steps
+## Schematic Diagram
+  ![final sketch](https://github.com/tanvir-robin/RFID-Based-Attendance-System-with-Mobile-App/assets/95021955/1ea8e111-a74f-4b9a-ad8f-df6e007f591a)
+
+
+## Implementation
+Implmentation Steps
 1. Arduino and Servo Setup
 - RFID reader is interfaced with the Arduino to read RFID card data.
 - Servo motor is connected to the Arduino to act as a door lock.
@@ -41,4 +46,28 @@ Database. A serial communication is made with the Arduino and the ESP8266. When 
 3. Flutter App Development
 - A Flutter app is developed for administrators to monitor attendance.
 - Firebase package is used to fetch access log data from Firebase.
-- The app displays access history with timestamps and employee detail
+- The app displays access history with timestamps and employee detail.
+
+
+## Mobile App made with FLutter SDK
+
+> The app is very basic yet. Just implemented the access logs. No design architecture is maintained. Will upadate the app soon with a beautiful and friendly UI. 
+
+![smartmockups_ll0crhv9](https://github.com/tanvir-robin/RFID-Based-Attendance-System-with-Mobile-App/assets/95021955/fc6bb5b5-6106-4fa0-b740-820efd62498a)
+
+
+## Benifits and Features
+  - [x] Automated Attendance.
+  - [x] Secure Access. (Only authorized People can access with authorized card)
+  - [x] Real-time Monitoring with Mobile App.
+  - [x] Red Signal for invalid access request. (Implemented with a buzzer in prototype)
+  - [x] Separate Database for user details associated with individual authrized card.
+  - [ ] Full administrator controll via mobile app. Admin can add new authorized user or remove existing with the mobile app (Coming soon. Working on it)
+  - [ ] Efficient reporting by the app. (Coming soon)
+  - [x] Easy to install and very cheap to implement.
+
+
+## Get in touch
+> Feel free to contact for any query or suggestion reagrding the project. <br>
+> tanvirrobin18@cse.pstu.ac.bd <br>
+> Telegram: @RooBiiinnn
