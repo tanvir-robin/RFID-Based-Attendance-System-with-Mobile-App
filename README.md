@@ -34,16 +34,16 @@ Database. A serial communication is made with the Arduino and the ESP8266. When 
 
 ## Implementation
 Implmentation Steps
-1. Arduino and Servo Setup
+1. **Arduino and Servo Setup**
 - RFID reader is interfaced with the Arduino to read RFID card data.
 - Servo motor is connected to the Arduino to act as a door lock.
 - Appropriate libraries are used to control the RFID reader and servo.
-2. ESP8266 and Firebase Integration
+2. **ESP8266 and Firebase Integration**
 - The ESP8266 connects to the office Wi-Fi network.
 - Firebase Realtime Database is configured to store access logs.
 - ESP8266 sends data to Firebase whenever an RFID card is approved.
 - ESP8266 uses a library called FIrebaseArduino to interact with Firebase.
-3. Flutter App Development
+3. **Flutter App Development**
 - A Flutter app is developed for administrators to monitor attendance.
 - Firebase package is used to fetch access log data from Firebase.
 - The app displays access history with timestamps and employee detail.
