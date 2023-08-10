@@ -74,6 +74,6 @@ Implmentation Steps
 
 
 ## Get in touch
-> Feel free to contact for any query or suggestion reagrding the project. <br>
+> Feel free to contact for any query or suggestion reagrding this project. <br>
 > tanvirrobin18@cse.pstu.ac.bd <br>
 > Telegram: @RooBiiinnn
