@@ -33,8 +33,25 @@ void setup() {
   servo.attach(SERVO_PIN);
   servo.write(angle);  // rotate servo motor to 0°
   pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
   Serial.println("Tap RFID/NFC Tag on reader");
 }
+
+void greenLight() {
+   digitalWrite(7, HIGH);  // turn the LED on (HIGH is the voltage level)
+   Serial.print("LED is on");
+   delay(1000);                      // wait for a second
+   digitalWrite(7, LOW);
+}
+
+
+void redLight() {
+   digitalWrite(6, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);                      // wait for a second
+  digitalWrite(6, LOW);
+}
+
+
 
 void loop() {
   if (rfid.PICC_IsNewCardPresent()) {  // new tag is available
@@ -50,6 +67,7 @@ void loop() {
         esp8266.println();
         // esp8266.println("Authorized Tag 1");
         changeServo();
+        greenLight();
         delay(2000);
         changeServo();
       } else if (rfid.uid.uidByte[0] == authorizedUID2[0] && rfid.uid.uidByte[1] == authorizedUID2[1] && rfid.uid.uidByte[2] == authorizedUID2[2] && rfid.uid.uidByte[3] == authorizedUID2[3]) {
@@ -62,6 +80,7 @@ void loop() {
         //   esp8266.println("Authorized Tag 2");
 
         changeServo();
+          greenLight();
         delay(2000);
         changeServo();
       } else if (rfid.uid.uidByte[0] == authorizedUID3[0] && rfid.uid.uidByte[1] == authorizedUID3[1] && rfid.uid.uidByte[2] == authorizedUID3[2] && rfid.uid.uidByte[3] == authorizedUID3[3]) {
@@ -74,6 +93,7 @@ void loop() {
         // esp8266.println("Authorized Tag 3");
 
         changeServo();
+          greenLight();
         delay(2000);
         changeServo();
       } else if (rfid.uid.uidByte[0] == authorizedUID4[0] && rfid.uid.uidByte[1] == authorizedUID4[1] && rfid.uid.uidByte[2] == authorizedUID4[2] && rfid.uid.uidByte[3] == authorizedUID4[3]) {
@@ -86,6 +106,7 @@ void loop() {
         //  esp8266.println("Authorized Tag 4");
 
         changeServo();
+          greenLight();
         delay(2000);
         changeServo();
       } else if (rfid.uid.uidByte[0] == authorizedUID5[0] && rfid.uid.uidByte[1] == authorizedUID5[1] && rfid.uid.uidByte[2] == authorizedUID5[2] && rfid.uid.uidByte[3] == authorizedUID5[3]) {
@@ -98,6 +119,7 @@ void loop() {
         //  esp8266.println("Authorized Tag 5");
 
         changeServo();
+          greenLight();
         delay(2000);
         changeServo();
       } else if (rfid.uid.uidByte[0] == authorizedUID6[0] && rfid.uid.uidByte[1] == authorizedUID6[1] && rfid.uid.uidByte[2] == authorizedUID6[2] && rfid.uid.uidByte[3] == authorizedUID6[3]) {
@@ -110,6 +132,7 @@ void loop() {
         //  esp8266.println("Authorized Tag 6");
 
         changeServo();
+          greenLight();
         delay(2000);
         changeServo();
       } else if (rfid.uid.uidByte[0] == authorizedUID7[0] && rfid.uid.uidByte[1] == authorizedUID7[1] && rfid.uid.uidByte[2] == authorizedUID7[2] && rfid.uid.uidByte[3] == authorizedUID7[3]) {
@@ -122,10 +145,11 @@ void loop() {
         // esp8266.println("Authorized Tag 7");
 
         changeServo();
+          greenLight();
         delay(2000);
         changeServo();
       } else {
-        digitalWrite(7, HIGH);
+        digitalWrite(6, HIGH);
 
         esp8266.print("!");
 
@@ -135,8 +159,8 @@ void loop() {
         }
 
         Serial.println();
-        delay(500);
-        digitalWrite(7, LOW);
+        delay(1000);
+        digitalWrite(6, LOW);
       }
 
       rfid.PICC_HaltA();       // halt PICC
