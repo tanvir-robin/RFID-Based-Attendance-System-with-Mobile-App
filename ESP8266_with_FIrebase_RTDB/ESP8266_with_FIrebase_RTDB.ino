@@ -15,7 +15,7 @@ NTPClient timeClient(ntpUDP, NTP_ADDRESS, 6*NTP_OFFSET, NTP_INTERVAL);
 
 // Set these to run example.
 #define FIREBASE_HOST "YOUR_REALTIME_DATABASE_HOST"
-#define FIREBASE_AUTH "FIREBASE_WEB_API"
+#define FIREBASE_AUTH "FIREBASE_AUTH_KEY"
 #define WIFI_SSID "WIFI_SSID"   // define WIFI SSID
 #define WIFI_PASSWORD "WIFI_PASSWORD"  // Define WIFI Password
 
